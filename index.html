@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSUN Map Quiz</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="container">
+  <!-- LEFT PANEL: Displays quiz instructions and messages -->
+  <div id="infoPanel">
+    <h2>CSUN Location Quiz</h2>
+    <p>Double-click on the map to guess the location.</p>
+
+    <!-- Current prompt -->
+    <div id="message"></div>
+
+    <hr>
+
+    <!-- History of answers -->
+    <h3>Answer History</h3>
+    <ul id="history"></ul>
+
+    <hr>
+
+    <!-- Final score -->
+    <div id="finalScore"></div>
+    <!-- Reset Button-->
+    <button id="resetBtn" stlye="display:none;">Restart Quiz</button>
+  </div>
+  <!-- RIGHT PANEL: Google Map -->
+  <div id="map"></div>
+</div>
+
+<!-- Main JavaScript file -->
+<script src="javascript/script.js"></script>
+
+<!-- Google Maps API (geometry library not needed anymore) -->
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdH7RPwaZjhm5SO1CkM8gWxtwLF0aOUXk&callback=initMap"
+  defer>
+</script>
+
+</body>
+</html>

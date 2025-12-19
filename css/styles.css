@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container holds left panel and map side-by-side */
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left information panel */
+#infoPanel {
+  width: 30%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  border-right: 2px solid #ccc;
+}
+
+/* Spacing for title */
+#infoPanel h2 {
+  margin-top: 0;
+}
+
+/* Message area for quiz feedback */
+#message {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Map container */
+#map {
+  width: 70%;
+  height: 100%;
+}
+
+#history {
+  padding-left: 20px;
+}
+
+#history li.correct {
+  color: green;
+}
+
+#history li.incorrect {
+  color: red;
+}
+
+#finalScore {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#resetBtn{
+    display:none;
+    margin-top:15px;
+    padding:8px 12px;
+    font-size:16px;
+    cursor:pointer;
+}
